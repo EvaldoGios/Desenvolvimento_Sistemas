@@ -34,7 +34,7 @@ public class App {
 			System.out.println("Multiplicação: " + (numero1 * numero2));
 			break;
 		case 4:
-			if (numero2 != 0) System.out.println("Divizão: " + (numero1 / numero2));
+			if (numero2 != 0) System.out.println("Divisão: " + (numero1 / numero2));
 			break;
 		default:
 			System.out.println("Opção Inválida!!!");

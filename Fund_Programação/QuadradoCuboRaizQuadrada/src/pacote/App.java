@@ -13,15 +13,19 @@ public class App {
 		double raiz;
 		
 		do {
-			System.out.println("Digite um número: ");
+			System.out.println("\nDigite um número: ");
 			numero = leia.nextInt();
 			
 			raiz = Math.sqrt(numero);
 			
-			System.out.println("Valor digitado: " + numero);
-			System.out.println("Quadrado do número: " + (numero * numero));
-			System.out.println("Cubo do número: " + (numero * numero * numero));
-			System.out.println("Raiz quadrada do número: " + Math.round(raiz));
+			if (numero <= 0) {
+				System.out.println("Erro!!! Precisa ser maior que 0!!!\n");
+			} else {
+				System.out.println("Valor digitado: " + numero);
+				System.out.println("Quadrado do número: " + (numero * numero));
+				System.out.println("Cubo do número: " + (numero * numero * numero));
+				System.out.println("Raiz quadrada do número: " + Math.round(raiz));
+			}
 		} while (numero > 0);
 
 	}
